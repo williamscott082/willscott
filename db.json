@@ -5,21 +5,27 @@
       "title": "Worked on Error Handling",
       "memo": "",
       "completed": false,
-      "added": "2018-03-16 16:03:03"
+      "created": "2018-03-16 16:03:03",
+      "started": "2018-03-16 16:03:03",
+      "userId": 1
     },
     {
       "id": 1,
       "title": "Review 4 PR\"s",
-      "memo": "BOOKTS-1237",
-      "completed": false,
-      "added": "2018-03-17 16:03:03"
+      "memo": "BOOKTS-1237 Did a review of Mike's 3 major PR's about stuff. Checked out Tim's huge PR",
+      "completed": "2018-03-17 16:03:03",
+      "created": "2018-03-17 16:03:03",
+      "started": "2018-03-17 16:03:03",
+      "userId": 1
     },
     {
       "id": 2,
       "title": "Refactored main controller",
       "memo": "",
       "completed": false,
-      "added": "2018-03-17 16:03:03"
+      "created": "2018-03-17 16:03:03",
+      "started": false,
+      "userId": 1
     }
   ]
 }
