@@ -4,12 +4,13 @@
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
-main,
-.app-header {
+.app-header,
+.app-main,
+.app-footer {
   padding: 20px;
 }
 
-main > h4 {
+.app-main > h4 {
   margin-top: 0;
 }
 
