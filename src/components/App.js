@@ -1,26 +1,18 @@
 import React, { Component } from 'react'
-import { Router, Route } from 'react-router'
-import About from './about/About'
-import Contact from './contact/Contact'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
+import TaskList from './taskList/TaskList'
+import TaskEdit from './taskEdit/TaskEdit'
 
 export default class App extends Component {
   render () {
     return (
-      <div className='app'>
-        <header className='app-header'>
-          <p>This is the header</p>
-        </header>
-        <main className='app-main'>
-          <Router>
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-          </Router>
-        </main>
-        <footer className='app-footer'>
-          <p>This is the footer</p>
-        </footer>
-      </div>
+      <Router>
+        <div className='app'>
+          <Route path='/tasks' component={TaskList} />
+          <Route path='/task/edit/:id' component={TaskEdit} />
+        </div>
+      </Router>
     )
   }
 }

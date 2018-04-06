@@ -1,6 +1,6 @@
-import { ADD, SELECT } from '../actions/task'
+import * as task from '../actions/task'
 
-const intiState = {
+const init = {
   tasks: [
     {
       id: 0,
@@ -29,12 +29,18 @@ const intiState = {
   }
 }
 
-export default (state = intiState, action) => {
+export default (state = init, action) => {
   switch (action.type) {
-    case ADD:
-      return { ...state, tasks: state.tasks.concat(action.payload) }
-    case SELECT:
-      return { ...state, selectedTask: action.payload }
+    case task.create:
+      return state
+    case task.get:
+      return state
+    case task.update:
+      return state
+    case task.remove:
+      return state
+    case task.complete:
+      return state
     default:
       return state
   }
